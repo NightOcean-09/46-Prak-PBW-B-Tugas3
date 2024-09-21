@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kedua</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffcc70, #ffafbd);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+        }
+
+        .info-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <div class="info-container" id="info">
+        <p id="nama"></p>
+        <p id="id"></p>
+    </div>
+
+    <script>
+        var nama = prompt("Masukkan Nama Anda:");
+        var id = prompt("Masukkan ID Anda:");
+
+        document.getElementById("nama").innerHTML = "Nama: " + nama;
+        document.getElementById("id").innerHTML = "ID: " + id;
+    </script>
+</body>
+
+</html>
